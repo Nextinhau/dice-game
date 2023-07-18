@@ -1,0 +1,78 @@
+@font-face {
+  font-family: Roboto-BoldItalic;
+  src: url("../fonts/Roboto-BoldItalic.ttf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto-BoldItalic", "sans-serif";
+  text-align: center;
+  letter-spacing: .15rem;
+  background: #34353E;
+  text-transform: capitalize;
+  user-select: none;
+}
+
+.content {
+  height: 100vh;
+  text-align: center;
+  overflow: auto;
+
+  .title {
+    font-size: 6rem;
+    color: #41BA8E;
+    padding: 3% 0;
+
+    .title-word {
+      padding: 0 1%;
+    }
+  }
+
+  .battle-btn {
+    font-size: 4rem;
+    color: white;
+    background: #41BA8E;
+    border-radius: 5px;
+    border: none;
+    transition: all .25s ease-in-out;
+    padding: 0 1.5%;
+
+    &:hover {
+      padding: 0 3%;
+      color: #41BA8E;
+      background: white;
+    }
+  }
+
+  .player-names {
+    padding: 3% 0;
+
+    .player-name {
+      display: inline-block;
+      font-size: 3rem;
+      color: #41BA8E;
+      border: none;
+      padding: 0 6%;
+    }
+  }
+
+  .dices {
+    display: flex;
+    justify-content: center;
+
+    .dice {
+      padding: 0 6%;
+    }
+  }
+
+  .footer {
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    font-size: 2rem;
+    color: white;
+    background: #41BA8E;
+    padding: .25% 0;
+  }
+}
